@@ -4,6 +4,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.math.sqrt
+val minSimilarity = 0.6
 
 def cosineSimilarity(vector1: DenseMatrix, vector2: DenseMatrix): Double = vector1.multiply(vector2.transpose).values(0) / (Vectors.norm(Vectors.dense(vector1.values), 2) * Vectors.norm(Vectors.dense(vector2.values), 2))
 
@@ -42,7 +43,7 @@ val numIterations = 10
 val model = ALS.train(ratings, rank, numIterations, 0.01)
 
 val dataDir = "offline/"
-val dataStr = "alsAndCos"
+val dateStr = "alsAndCos"
 
 calculateAllCosineSimilarity(model, dataDir, dateStr) //save cos sim.
 model.save(sc, dataDir + "ALSmodel_" + dateStr) //save model.
