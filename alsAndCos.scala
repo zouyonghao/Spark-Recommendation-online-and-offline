@@ -6,7 +6,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 import scala.math.sqrt
 val minSimilarity = 0.6
 
-def cosineSimilarity(vector1: DenseMatrix, vector2: DenseMatrix): Double = vector1.multiply(vector2.transpose).values(0) / (Vectors.norm(Vectors.dense(vector1.values), 2) * Vectors.norm(Vectors.dense(vector2.values), 2))
+def cosineSimilarity(vector1: DenseMatrix, vector2: DenseMatrix): Double = vector1.transpose.multiply(vector2).values(0) / (Vectors.norm(Vectors.dense(vector1.values), 2) * Vectors.norm(Vectors.dense(vector2.values), 2))
 
 def calculateAllCosineSimilarity(model: MatrixFactorizationModel, dataDir: String, dateStr: String): Unit = {
     //calculate all the similarity and store the stuff whose sim > 0.5 to Redis.
@@ -20,6 +20,7 @@ def calculateAllCosineSimilarity(model: MatrixFactorizationModel, dataDir: Strin
         .filter{ case ((movieId1, vector1), (movieId2, vector2)) => movieId1 != movieId2 }
         .map{case ((movieId1, vector1), (movieId2, vector2)) =>
         val sim = cosineSimilarity(vector1, vector2)
+        println(sim)
         (movieId1, movieId2, sim)
         }.filter(_._3 >= minSimilarity)
 
