@@ -29,5 +29,9 @@ spark-submit --class SimpleApp target/scala-2.12/simple-project_2.12-1.0.jar
 ```bash
 npm install
 
-node socketServer.js
+node socket/socket_server.js
+node api/index.js
+
+cd client
+npm start
 ```
