@@ -5,6 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.streaming._
 import java.net.Socket
 import org.apache.log4j.{Level, Logger}
+import org.apache.spark.mllib.recommendation.MatrixFactorizationModel
 
 object SimpleApp {
 
@@ -41,7 +42,21 @@ object SimpleApp {
           .map(item => item._1.toString + "," + item._2.toString)
           .mkString("|")
       val os = s.getOutputStream();
-      os.write(("set " + userId.toString + " " + content + "\r\n").getBytes());
+      os.write(("set " + userId + " " + content + "\r\n").getBytes());
+      os.flush();
+      Thread.sleep(10);
+      val length = s.getInputStream().available()
+      val data = new Array[Byte](length + 1)
+      s.getInputStream().read(data, 0, length)
+
+      Logger
+        .getLogger(this.getClass())
+        .error(data.slice(0, length).map(_.toChar).mkString)
+    }
+
+    def set(key: String, value: String) = {
+      val os = s.getOutputStream();
+      os.write(("set " + key + " " + value + "\r\n").getBytes());
       os.flush();
       Thread.sleep(10);
       val length = s.getInputStream().available()
@@ -78,12 +93,17 @@ object SimpleApp {
     val movie2movieSimilarity =
       movie2movieList.map(i => (i._1, i._2.take(100).toMap)).collectAsMap
 
+    val alsModel =
+      MatrixFactorizationModel.load(sc, "offline/ALSmodel_alsAndCos")
+
     val ssc = new StreamingContext(sc, Seconds(5))
 
     val bTopKMostSimilarMovies =
       ssc.sparkContext.broadcast(topKMostSimilarMovies)
     val bMovie2movieSimilarity =
       ssc.sparkContext.broadcast(movie2movieSimilarity)
+    val bAlsModel =
+      ssc.sparkContext.broadcast(alsModel)
 
     val dataDStream =
       ssc
@@ -130,6 +150,27 @@ object SimpleApp {
           .count()
       }
     })
+
+    // query command
+    // ssc
+    //   .socketTextStream("thumm01", 4321)
+    //   .filter(l => l.startsWith("Q") && l.split(" ").length == 2)
+    //   .map { l =>
+    //     val userId = l.split(" ")(1)
+    //     val content = bAlsModel.value
+    //       .recommendProductsForUsers(1)
+    //       .collectAsMap
+    //       .map(i => i._2(0))
+    //       .toList
+    //       .sortBy(r => r.rating)
+    //       .take(100)
+    //       .map(r => r.product)
+    //       .toArray
+    //       .mkString("|")
+    //     SocketToRedis.set(userId + "_offline", content)
+    //     true
+    //   }
+    //   .count()
 
     ssc.start()
     ssc.awaitTermination()
