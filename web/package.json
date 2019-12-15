@@ -1,0 +1,11 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yong-Hao Zou",
+  "license": "MIT",
+  "dependencies": {
+    "net": "^1.0.2",
+    "typescript": "^3.7.3"
+  }
+}
