@@ -2,3 +2,4 @@ offline/
 .metals
 target
 node_modules
+web/package-lock.json
