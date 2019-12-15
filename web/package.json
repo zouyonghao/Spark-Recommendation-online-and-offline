@@ -1,11 +1,18 @@
 {
-  "name": "web",
+  "name": "jr-dev",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "author": "Yong-Hao Zou",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "net": "^1.0.2",
-    "typescript": "^3.7.3"
+    "cron": "^1.7.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "redis": "^2.8.0"
   }
 }

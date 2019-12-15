@@ -14,6 +14,9 @@ net.createServer(function (sock) {
   sock.on('data', function (data) {
     console.log('DATA ' + sock.remoteAddress + ': ' + data);
 
+    socks.forEach(item => {
+      item.write(data);
+    });
     // sock.write('You said "' + data + '"');
   });
 
@@ -26,21 +29,20 @@ net.createServer(function (sock) {
 
 console.log('Server listening on ' + HOST + ':' + PORT);
 
-var standard_input = process.stdin;
-standard_input.setEncoding('utf-8');
+// var standard_input = process.stdin;
+// standard_input.setEncoding('utf-8');
 
-console.log("Please input text in command line.");
+// console.log("Please input text in command line.");
 
-// When user input data and click enter key.
-standard_input.on('data', function (data) {
+// // When user input data and click enter key.
+// standard_input.on('data', function (data) {
 
-    // User input exit.
-    if(data === 'exit\n'){
-        process.exit();
-    }else
-    {
-      socks.forEach(sock => {
-        sock.write(data);
-      });
-    }
-});
+//   // User input exit.
+//   if (data === 'exit\n') {
+//     process.exit();
+//   } else {
+//     socks.forEach(sock => {
+//       sock.write(data);
+//     });
+//   }
+// });

@@ -1,0 +1,8 @@
+body {
+  margin: 20px 40px;
+}
+
+.flex-align-mid {
+  display: flex;
+  align-items: center;
+}
