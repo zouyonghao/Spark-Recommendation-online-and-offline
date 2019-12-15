@@ -41,7 +41,7 @@ app.post('/api/rate', async (req, res) => {
     const movieId = req.query.movieId;
     const rating = req.query.rating;
     console.log(userId + " " + movieId + " " + rating)
-    socketClient.write(userId + " " + movieId + " " + rating)
+    socketClient.write(userId + " " + movieId + " " + rating + "\n")
     // socketClient.write("")
     res.header("Access-Control-Allow-Origin", "*");
     return res.send("success")
