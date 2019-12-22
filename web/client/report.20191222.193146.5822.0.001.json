@@ -1,0 +1,739 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191222.193146.5822.0.001.json",
+    "dumpEventTime": "2019-12-22T19:31:46Z",
+    "dumpEventTimeStamp": "1577014306400",
+    "processId": 5822,
+    "cwd": "/mnt/data/dsjxtjc/2019211168/Spark-Recommendation-online-and-offline/web/client",
+    "commandLine": [
+      "node",
+      "/mnt/data/dsjxtjc/2019211168/Spark-Recommendation-online-and-offline/web/client/node_modules/_react-scripts@3.0.1@react-scripts/scripts/start.js"
+    ],
+    "nodejsVersion": "v13.3.0",
+    "glibcVersionRuntime": "2.23",
+    "glibcVersionCompiler": "2.23",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "13.3.0",
+      "v8": "7.9.317.25-node.23",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.3.0/node-v13.3.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.3.0/node-v13.3.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.4.0-170-generic",
+    "osVersion": "#199-Ubuntu SMP Thu Nov 14 01:45:04 UTC 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2607,
+        "user": 2214943500,
+        "nice": 21400,
+        "sys": 167884000,
+        "idle": 6561128000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2601,
+        "user": 1645204600,
+        "nice": 45100,
+        "sys": 150183700,
+        "idle": 7158947500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2742,
+        "user": 1745632900,
+        "nice": 26000,
+        "sys": 144952900,
+        "idle": 7070481400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2627,
+        "user": 1849531200,
+        "nice": 19100,
+        "sys": 155680100,
+        "idle": 6958049800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2722,
+        "user": 1772287500,
+        "nice": 22000,
+        "sys": 166826300,
+        "idle": 7022146600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2603,
+        "user": 1796600600,
+        "nice": 63900,
+        "sys": 171504900,
+        "idle": 6994291500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2775,
+        "user": 1701244200,
+        "nice": 95500,
+        "sys": 97234000,
+        "idle": 7168215400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2621,
+        "user": 1895269800,
+        "nice": 22600,
+        "sys": 99797000,
+        "idle": 6971507300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2613,
+        "user": 2029237600,
+        "nice": 55700,
+        "sys": 96804000,
+        "idle": 6841136000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2610,
+        "user": 1916525900,
+        "nice": 21900,
+        "sys": 96332100,
+        "idle": 6954204800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2602,
+        "user": 1897113000,
+        "nice": 100100,
+        "sys": 96943300,
+        "idle": 6972958800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2601,
+        "user": 2083982200,
+        "nice": 20700,
+        "sys": 97970900,
+        "idle": 6784985700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2710,
+        "user": 1183883500,
+        "nice": 57200,
+        "sys": 110266500,
+        "idle": 7681962600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2618,
+        "user": 1296205800,
+        "nice": 31100,
+        "sys": 116123000,
+        "idle": 7564045300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2601,
+        "user": 1347024900,
+        "nice": 24700,
+        "sys": 133318000,
+        "idle": 7494981200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2603,
+        "user": 1558423100,
+        "nice": 51700,
+        "sys": 112210100,
+        "idle": 7305092100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2609,
+        "user": 1405164400,
+        "nice": 4000,
+        "sys": 117677100,
+        "idle": 7452908400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2601,
+        "user": 1266029100,
+        "nice": 56200,
+        "sys": 110336300,
+        "idle": 7599319800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2621,
+        "user": 1823369000,
+        "nice": 3400,
+        "sys": 78910800,
+        "idle": 7073477100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2616,
+        "user": 1173070500,
+        "nice": 1600,
+        "sys": 80292600,
+        "idle": 7722473600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2832,
+        "user": 1317324000,
+        "nice": 300,
+        "sys": 79331300,
+        "idle": 7579580800,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2602,
+        "user": 1286735700,
+        "nice": 1400,
+        "sys": 79467100,
+        "idle": 7610102300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2600,
+        "user": 1154392700,
+        "nice": 1400,
+        "sys": 80237200,
+        "idle": 7741580300,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz",
+        "speed": 2605,
+        "user": 1095242100,
+        "nice": 500,
+        "sys": 81617600,
+        "idle": 7798139600,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eno1",
+        "internal": false,
+        "mac": "0c:c4:7a:7c:ce:48",
+        "address": "219.223.181.246",
+        "netmask": "255.255.252.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp130s0f0",
+        "internal": false,
+        "mac": "74:a4:b5:00:53:a0",
+        "address": "192.168.0.101",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "eno1",
+        "internal": false,
+        "mac": "0c:c4:7a:7c:ce:48",
+        "address": "fe80::ec4:7aff:fe7c:ce48",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      },
+      {
+        "name": "enp130s0f0",
+        "internal": false,
+        "mac": "74:a4:b5:00:53:a0",
+        "address": "fe80::76a4:b5ff:fe00:53a0",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      }
+    ],
+    "host": "thumm01"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000a9d671",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x000000000097be71",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000ac9cfe",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000ac9f51",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000c4f1b5",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000c4f2b8",
+      "symbol": "v8::internal::Heap::CheckIneffectiveMarkCompact(unsigned long, double) [node]"
+    },
+    {
+      "pc": "0x0000000000c606f9",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000c61524",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000c63a85",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000c63ff5",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000c2d674",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [node]"
+    },
+    {
+      "pc": "0x0000000000f12aee",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x0000000001251099",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2167619584,
+    "totalCommittedMemory": 2158616344,
+    "usedMemory": 2006474872,
+    "availableMemory": 97072904,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 25436200,
+        "capacity": 16758784,
+        "used": 4265984,
+        "available": 12492800
+      },
+      "old_space": {
+        "memorySize": 2022576128,
+        "committedMemory": 2022192608,
+        "capacity": 1930373288,
+        "used": 1892747680,
+        "available": 37625608
+      },
+      "code_space": {
+        "memorySize": 2527232,
+        "committedMemory": 2254848,
+        "capacity": 2006752,
+        "used": 2006752,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 3936256,
+        "committedMemory": 3935968,
+        "capacity": 2882160,
+        "used": 2882160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 104140800,
+        "committedMemory": 104140800,
+        "capacity": 103994712,
+        "used": 103994712,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 544544,
+        "used": 544544,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16758784,
+        "used": 0,
+        "available": 16758784
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 253.62,
+    "kernelCpuSeconds": 33.544,
+    "cpuConsumptionPercent": 0.0484452,
+    "maxRss": 2686648320,
+    "pageFaults": {
+      "IORequired": 62,
+      "IONotRequired": 8102291
+    },
+    "fsActivity": {
+      "reads": 15936,
+      "writes": 9560
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 122.56,
+    "kernelCpuSeconds": 10.028,
+    "cpuConsumptionPercent": 0.0223679,
+    "fsActivity": {
+      "reads": 14600,
+      "writes": 24
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "SPARK_DIST_CLASSPATH": "/opt/server/hadoop/3.2.1/etc/hadoop:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/*:/opt/server/hadoop/3.2.1/share/hadoop/common/*:/opt/server/hadoop/3.2.1/share/hadoop/hdfs:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/*:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/*:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib/*:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/*:/opt/server/hadoop/3.2.1/share/hadoop/yarn:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/*:/opt/server/hadoop/3.2.1/share/hadoop/yarn/*:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/accessors-smart-1.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/asm-5.0.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/avro-1.7.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/checker-qual-2.5.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-beanutils-1.9.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-codec-1.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-compress-1.18.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-io-2.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-lang3-3.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-net-3.6.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-text-1.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/curator-client-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/curator-framework-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/dnsjava-2.1.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/failureaccess-1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/gson-2.2.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/guava-27.0-jre.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/hadoop-annotations-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/hadoop-auth-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/httpclient-4.5.6.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/httpcore-4.4.10.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-annotations-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-core-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-databind-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jersey-core-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jersey-json-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jersey-server-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jersey-servlet-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jettison-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-http-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-io-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-security-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-server-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-servlet-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-util-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-webapp-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-xml-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jsch-0.1.54.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/json-smart-2.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-client-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-common-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-core-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-server-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-util-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-config-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-util-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/metrics-core-3.2.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/netty-3.10.5.Final.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/nimbus-jose-jwt-4.41.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/paranamer-2.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/re2j-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/snappy-java-1.0.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/stax2-api-3.1.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/token-provider-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/zookeeper-3.4.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/hadoop-common-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/hadoop-common-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/hadoop-kms-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/hadoop-nfs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/jdiff:/opt/server/hadoop/3.2.1/share/hadoop/common/lib:/opt/server/hadoop/3.2.1/share/hadoop/common/sources:/opt/server/hadoop/3.2.1/share/hadoop/common/webapps:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/asm-5.0.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/avro-1.7.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-beanutils-1.9.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-compress-1.18.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-io-2.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-net-3.6.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-text-1.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/gson-2.2.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/hadoop-annotations-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/hadoop-auth-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/httpclient-4.5.6.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/httpcore-4.4.10.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-annotations-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-core-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-databind-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jettison-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-http-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-io-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-security-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-server-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-servlet-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-util-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-util-ajax-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-webapp-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-xml-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jsch-0.1.54.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/json-smart-2.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/netty-3.10.5.Final.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/netty-all-4.0.52.Final.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/nimbus-jose-jwt-4.41.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/okio-1.6.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/paranamer-2.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/re2j-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-client-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-client-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/jdiff:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/sources:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/webapps:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/jdiff:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib-examples:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/sources:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/fst-2.50.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/guice-4.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/java-util-1.9.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jersey-client-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/json-io-2.5.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/objenesis-1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-api-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-client-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-common-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-registry-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-common-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-router-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-services-api-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-services-core-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-submarine-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib:/opt/server/hadoop/3.2.1/share/hadoop/yarn/sources:/opt/server/hadoop/3.2.1/share/hadoop/yarn/test:/opt/server/hadoop/3.2.1/share/hadoop/yarn/timelineservice:/opt/server/hadoop/3.2.1/share/hadoop/yarn/webapps:/opt/server/hadoop/3.2.1/share/hadoop/yarn/yarn-service-examples:/opt/server/jdk/1.8.0_221/lib/tools.jar",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_ham_it_up": "",
+    "TMUX": "/tmp/tmux-1006/default,13878,0",
+    "HADOOP_CONF_DIR": "/opt/server/hadoop/3.2.1/etc/hadoop",
+    "SDKMAN_VERSION": "5.7.4+362",
+    "npm_package_dependencies__material_ui_icons": "^4.1.0",
+    "npm_config_legacy_bundling": "",
+    "npm_config_sign_git_tag": "",
+    "MAIL": "/var/mail/2019211168",
+    "SSH_CLIENT": "219.223.185.98 41770 22",
+    "USER": "2019211168",
+    "LC_TIME": "zh_CN.UTF-8",
+    "npm_config_user_agent": "npm/6.13.2 node/v13.3.0 linux x64",
+    "npm_config_always_auth": "",
+    "SBT_HOME": "/home/dsjxtjc/2019211168/.sdkman/candidates/sbt/current",
+    "npm_package_dependencies__material_ui_core": "^4.0.0-rc.0",
+    "npm_config_bin_links": "true",
+    "npm_config_key": "",
+    "npm_config_allow_same_version": "",
+    "npm_config_description": "true",
+    "npm_config_fetch_retries": "2",
+    "npm_config_heading": "npm",
+    "npm_config_if_present": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_user": "1006",
+    "npm_node_execpath": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/Cellar/node/13.3.0/bin/node",
+    "LD_LIBRARY_PATH": "/home/dsjxtjc/2019211168/.linuxbrew/lib:/home/dsjxtjc/2019211168/final/mongo",
+    "SHLVL": "2",
+    "npm_config_prefer_online": "",
+    "npm_config_noproxy": "",
+    "HOME": "/home/dsjxtjc/2019211168",
+    "OLDPWD": "/home/dsjxtjc/2019211168/Spark-Recommendation-online-and-offline/web",
+    "npm_package_browserslist_production_0": ">0.2%",
+    "npm_config_force": "",
+    "SSH_TTY": "/dev/pts/135",
+    "JRE_HOME": "/opt/server/jdk/1.8.0_221/jre",
+    "npm_package_browserslist_production_1": "not dead",
+    "npm_config_only": "",
+    "npm_config_read_only": "",
+    "npm_package_browserslist_production_2": "not op_mini all",
+    "npm_config_cache_min": "10",
+    "npm_config_init_license": "ISC",
+    "HOMEBREW_PREFIX": "/mnt/data/dsjxtjc/2019211168/.linuxbrew",
+    "npm_config_editor": "vi",
+    "npm_config_rollback": "true",
+    "npm_config_tag_version_prefix": "v",
+    "LC_MONETARY": "zh_CN.UTF-8",
+    "HADOOP_COMMON_LIB_NATIVE_DIR": "/opt/server/hadoop/3.2.1/lib/native",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_timing": "",
+    "npm_config_userconfig": "/home/dsjxtjc/2019211168/.npmrc",
+    "npm_config_engine_strict": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_preid": "",
+    "npm_config_tmp": "/tmp",
+    "npm_package_dependencies_react_scripts": "3.0.1",
+    "npm_package_description": "As seen on https://youtube.com/codedrip",
+    "npm_config_depth": "Infinity",
+    "npm_config_package_lock_only": "",
+    "npm_config_save_dev": "",
+    "npm_config_usage": "",
+    "npm_package_readmeFilename": "README.md",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_cafile": "",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_progress": "true",
+    "npm_config_https_proxy": "",
+    "npm_config_save_prod": "",
+    "INFOPATH": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/share/info:/mnt/data/dsjxtjc/2019211168/.linuxbrew/share/info",
+    "npm_config_audit": "true",
+    "npm_config_cidr": "",
+    "npm_config_onload_script": "",
+    "npm_config_sso_type": "oauth",
+    "LOGNAME": "2019211168",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_shell": "/bin/bash",
+    "SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+    "EVENT_NOEPOLL": "1",
+    "_": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/bin/npm",
+    "npm_package_private": "true",
+    "npm_config_prefix": "/mnt/data/dsjxtjc/2019211168/.linuxbrew",
+    "npm_config_dry_run": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_scope": "",
+    "npm_config_browser": "",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_save_optional": "",
+    "npm_config_searchopts": "",
+    "npm_config_versions": "",
+    "XDG_SESSION_ID": "1784",
+    "TERM": "screen",
+    "npm_config_cache": "/home/dsjxtjc/2019211168/.npm",
+    "npm_config_proxy": "",
+    "npm_config_send_metrics": "",
+    "npm_package_scripts_start": "react-scripts start",
+    "npm_config_global_style": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version": "",
+    "npm_package_browserslist_development_0": "last 1 chrome version",
+    "npm_config_local_address": "",
+    "npm_config_viewer": "man",
+    "npm_config_node_gyp": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/mnt/data/dsjxtjc/2019211168/Spark-Recommendation-online-and-offline/web/client/node_modules/.bin:/mnt/data/dsjxtjc/2019211168/.linuxbrew/bin:/mnt/data/dsjxtjc/2019211168/.linuxbrew/sbin:/opt/server/jdk/1.8.0_221/bin:/opt/server/jdk/1.8.0_221/jre/bin:/home/dsjxtjc/2019211168/.sdkman/candidates/sbt/current/bin:/mnt/data/dsjxtjc/2019211168/.linuxbrew/bin:/mnt/data/dsjxtjc/2019211168/.linuxbrew/sbin:/opt/server/jdk/1.8.0_221/bin:/opt/server/jdk/1.8.0_221/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/server/hadoop/3.2.1/bin:/opt/server/scripts:/opt/server/hadoop/3.2.1/bin:/opt/server/scripts",
+    "SDKMAN_CANDIDATES_DIR": "/home/dsjxtjc/2019211168/.sdkman/candidates",
+    "HOMEBREW_CELLAR": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/Cellar",
+    "npm_package_name": "client",
+    "npm_package_dependencies_react_ga": "^2.6.0",
+    "npm_package_browserslist_development_1": "last 1 firefox version",
+    "npm_config_audit_level": "low",
+    "npm_config_prefer_offline": "",
+    "NODE": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/Cellar/node/13.3.0/bin/node",
+    "LC_ADDRESS": "zh_CN.UTF-8",
+    "XDG_RUNTIME_DIR": "/run/user/1006",
+    "npm_package_browserslist_development_2": "last 1 safari version",
+    "npm_config_color": "true",
+    "npm_config_sign_git_commit": "",
+    "npm_package_scripts_eject": "react-scripts eject",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_maxsockets": "50",
+    "npm_config_offline": "",
+    "npm_config_sso_poll_frequency": "500",
+    "LC_TELEPHONE": "zh_CN.UTF-8",
+    "LANG": "zh_CN.UTF-8",
+    "npm_package_dependencies_react_dom": "^16.8.6",
+    "npm_config_umask": "0022",
+    "SDKMAN_PLATFORM": "Linux64",
+    "HADOOP_CLASSPATH": "/opt/server/hadoop/3.2.1/etc/hadoop:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/*:/opt/server/hadoop/3.2.1/share/hadoop/common/*:/opt/server/hadoop/3.2.1/share/hadoop/hdfs:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/*:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/*:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib/*:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/*:/opt/server/hadoop/3.2.1/share/hadoop/yarn:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/*:/opt/server/hadoop/3.2.1/share/hadoop/yarn/*:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/accessors-smart-1.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/asm-5.0.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/avro-1.7.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/checker-qual-2.5.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-beanutils-1.9.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-codec-1.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-compress-1.18.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-io-2.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-lang3-3.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-net-3.6.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/commons-text-1.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/curator-client-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/curator-framework-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/dnsjava-2.1.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/failureaccess-1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/gson-2.2.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/guava-27.0-jre.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/hadoop-annotations-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/hadoop-auth-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/httpclient-4.5.6.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/httpcore-4.4.10.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-annotations-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-core-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-databind-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jersey-core-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jersey-json-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jersey-server-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jersey-servlet-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jettison-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-http-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-io-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-security-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-server-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-servlet-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-util-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-webapp-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jetty-xml-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jsch-0.1.54.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/json-smart-2.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-client-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-common-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-core-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-server-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerb-util-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-config-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-util-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/metrics-core-3.2.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/netty-3.10.5.Final.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/nimbus-jose-jwt-4.41.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/paranamer-2.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/re2j-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/snappy-java-1.0.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/stax2-api-3.1.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/token-provider-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/lib/zookeeper-3.4.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/hadoop-common-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/hadoop-common-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/hadoop-kms-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/hadoop-nfs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/common/jdiff:/opt/server/hadoop/3.2.1/share/hadoop/common/lib:/opt/server/hadoop/3.2.1/share/hadoop/common/sources:/opt/server/hadoop/3.2.1/share/hadoop/common/webapps:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/asm-5.0.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/avro-1.7.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-beanutils-1.9.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-compress-1.18.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-io-2.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-net-3.6.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/commons-text-1.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/gson-2.2.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/hadoop-annotations-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/hadoop-auth-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/httpclient-4.5.6.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/httpcore-4.4.10.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-annotations-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-core-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-databind-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jettison-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-http-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-io-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-security-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-server-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-servlet-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-util-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-util-ajax-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-webapp-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jetty-xml-9.3.24.v20180605.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jsch-0.1.54.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/json-smart-2.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/netty-3.10.5.Final.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/netty-all-4.0.52.Final.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/nimbus-jose-jwt-4.41.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/okio-1.6.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/paranamer-2.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/re2j-1.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-client-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-client-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/jdiff:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/lib:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/sources:/opt/server/hadoop/3.2.1/share/hadoop/hdfs/webapps:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.1-tests.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/jdiff:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/lib-examples:/opt/server/hadoop/3.2.1/share/hadoop/mapreduce/sources:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/fst-2.50.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/guice-4.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.8.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/java-util-1.9.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jersey-client-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/json-io-2.5.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/objenesis-1.0.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-api-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-client-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-common-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-registry-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-common-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-router-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-services-api-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-services-core-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/hadoop-yarn-submarine-3.2.1.jar:/opt/server/hadoop/3.2.1/share/hadoop/yarn/lib:/opt/server/hadoop/3.2.1/share/hadoop/yarn/sources:/opt/server/hadoop/3.2.1/share/hadoop/yarn/test:/opt/server/hadoop/3.2.1/share/hadoop/yarn/timelineservice:/opt/server/hadoop/3.2.1/share/hadoop/yarn/webapps:/opt/server/hadoop/3.2.1/share/hadoop/yarn/yarn-service-examples:/opt/server/jdk/1.8.0_221/lib/tools.jar:/opt/server/jdk/1.8.0_221/lib/tools.jar",
+    "SDKMAN_DIR": "/home/dsjxtjc/2019211168/.sdkman",
+    "npm_config_fund": "true",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_message": "%s",
+    "npm_lifecycle_script": "react-scripts start",
+    "npm_package_scripts_test": "react-scripts test",
+    "npm_package_proxy": "http://localhost:3001",
+    "npm_config_ca": "",
+    "npm_config_cert": "",
+    "npm_config_global": "",
+    "npm_config_link": "",
+    "SHELL": "/bin/bash",
+    "HADOOP_OPTS": "-Djava.library.path=/opt/server/hadoop/3.2.1/lib:/opt/server/hadoop/3.2.1/lib/native",
+    "LC_NAME": "zh_CN.UTF-8",
+    "npm_package_version": "0.1.0",
+    "npm_config_access": "",
+    "npm_config_also": "",
+    "npm_config_save": "true",
+    "npm_config_unicode": "true",
+    "npm_lifecycle_event": "start",
+    "npm_package_scripts_build": "react-scripts build",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"start\"],\"original\":[\"start\"]}",
+    "npm_config_before": "",
+    "npm_config_long": "",
+    "npm_config_production": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "npm_config_auth_type": "legacy",
+    "npm_config_node_version": "13.3.0",
+    "npm_config_tag": "latest",
+    "LC_MEASUREMENT": "zh_CN.UTF-8",
+    "npm_config_git_tag_version": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_script_shell": "",
+    "npm_config_shrinkwrap": "true",
+    "LC_IDENTIFICATION": "zh_CN.UTF-8",
+    "CLASSPATH": "/opt/server/jdk/1.8.0_221/lib:/opt/server/jdk/1.8.0_221/jre/lib:/opt/server/jdk/1.8.0_221/lib:/opt/server/jdk/1.8.0_221/jre/lib:",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_save_exact": "",
+    "npm_config_strict_ssl": "true",
+    "PYSPARK_PYTHON": "python3",
+    "npm_config_dev": "",
+    "npm_config_globalconfig": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/etc/npmrc",
+    "npm_config_init_module": "/home/dsjxtjc/2019211168/.npm-init.js",
+    "npm_config_parseable": "",
+    "PWD": "/home/dsjxtjc/2019211168/Spark-Recommendation-online-and-offline/web/client",
+    "JAVA_HOME": "/opt/server/jdk/1.8.0_221",
+    "npm_config_globalignorefile": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/etc/npmignore",
+    "npm_execpath": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/lib/node_modules/npm/bin/npm-cli.js",
+    "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "SSH_CONNECTION": "10.85.14.171 51614 219.223.181.246 22",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_searchstaleness": "900",
+    "HOMEBREW_REPOSITORY": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/Homebrew",
+    "LC_NUMERIC": "zh_CN.UTF-8",
+    "npm_config_node_options": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "LC_PAPER": "zh_CN.UTF-8",
+    "npm_config_group": "502",
+    "npm_config_init_author_email": "",
+    "npm_config_searchexclude": "",
+    "MANPATH": "/mnt/data/dsjxtjc/2019211168/.linuxbrew/share/man:/mnt/data/dsjxtjc/2019211168/.linuxbrew/share/man::",
+    "HADOOP_HOME": "/opt/server/hadoop/3.2.1",
+    "TMUX_PANE": "%8",
+    "npm_config_git": "git",
+    "npm_config_optional": "true",
+    "SPARK_HOME": "/opt/server/spark/2.4.4",
+    "npm_package_dependencies_react": "^16.8.6",
+    "npm_package_eslintConfig_extends": "react-app",
+    "npm_config_json": "",
+    "INIT_CWD": "/mnt/data/dsjxtjc/2019211168/Spark-Recommendation-online-and-offline/web/client",
+    "BABEL_ENV": "development",
+    "NODE_ENV": "development",
+    "NODE_PATH": ""
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 256871,
+      "hard": 256871
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/mnt/data/dsjxtjc/2019211168/.linuxbrew/lib/libicui18n.so.64",
+    "/mnt/data/dsjxtjc/2019211168/.linuxbrew/lib/libicuuc.so.64",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/mnt/data/dsjxtjc/2019211168/.linuxbrew/Cellar/icu4c/64.2/lib/libicudata.so.64",
+    "/mnt/data/dsjxtjc/2019211168/.linuxbrew/lib/ld.so",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2"
+  ]
+}
