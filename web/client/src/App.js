@@ -25,6 +25,7 @@ async function fetchNearlineMovies(update, userId) {
   // console.log(text.split("|").map(i => parseInt(i.split(",")[0])))
   update(text.split("|").map(i => parseInt(i.split(",")[0])));
 }
+// App.js
 async function fetchOnlineMovies(update, userId) {
   // const res = await fetch(MOVIE_ONLINE_API_URL + userId);
   // let text = await res.text();
